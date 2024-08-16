@@ -50,7 +50,7 @@ func TestInvalidPasetoToken(t *testing.T) {
 	payload, err := NewPayload(util.RandOwner(), time.Minute)
 	require.NoError(t, err)
 
-	token := "v2.local.eyJpZCI6IjM4ZjM1ZjMwLWJmY2ItNDIzYy1hN2U1LWYwMzU0ZjI0ZjI1ZiIsInVzZXJuYW1lIjoic2ltcGxlYmFuayIsImlzc3VlZEF0IjoiMjAyMS0wNS0wNlQxNzoxNzowMC4wMDAwMDArMDAwIiwiZXhwaXJlZEF0IjoiMjAyMS0wNS0wNlQxNzoxNzowMC4wMDAwMDArMDAwIn0"
+	token := "invalid_token"
 
 	maker, err := NewPasetoMaker(util.RandomString(32))
 	require.NoError(t, err)
