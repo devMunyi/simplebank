@@ -166,4 +166,6 @@ b) main_test.go - tests entry point
 # 8. DB transaction lock & How to handle deadlock in Golang
 
 
-# 9. 
+# 9. Mock DB for testing HTTP API in Go and achieve 100% coverage
+- Generate mocks using mockgen i.e:
+mockgen -package mockdb -destination db/mock/store.go simplebank/db/sqlc Store
